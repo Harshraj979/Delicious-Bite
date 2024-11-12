@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(pexels-reneterp-1581384.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color:rgba(34, 30, 30,0.425) ;
+            color: rgba(210, 207, 207, 0.547);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav a {
+            color:  rgba(243, 240, 240, 0.547);
+            text-decoration: none;
+        }
+        nav a:focus{
+            outline: 2px solid yellow
+        }
+
+        main {
+            padding: 20px;
+        }
+        #search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #recipeSearch {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid rgb(165, 136, 50, 0.425);
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #recipeSearch:focus {
+            border-color: olivedrab;
+            box-shadow: 0 0 8px olivedrab;
+        }
+
+
+        .recipe {
+            background-color: rgb(165, 136, 50,0.425);
+            border: 1px solid rgb(49, 43, 43);
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 15px;
+        }
+
+        .recipe h2 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color:rgb(175, 151, 27);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: olivedrab;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(24, 22, 22,0.425);
+            color:  rgba(243, 240, 240, 0.547);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 100px;
+        }
+        p{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-bar">
+            <input type="text" id="recipeSearch" placeholder="Search for a recipe...">
+        </section>
+        <section id="recipes">
+            <article class="recipe">
+                <h2>Bruschetta</h2>
+                <p>toasted Italian bread drenched in olive oil and served typically with garlic or tomatoes.</p>
+                <button onclick="orderIngredients('Bruschetta')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Spring Rolls</h2>
+                    <p>nice and crunchy with veggies and soft from the rice paper".</p>
+                    <button onclick="orderIngredients('Spring Rolls')">Order Ingredients</button>
+                </article>
+            </article>
+            <article class="recipe">
+                <h2>Momos</h2>
+                <p>A type of dumpling that are made from dough wrapped around a spiced filling of meat or vegetables.</p>
+                <button onclick="orderIngredients('Momos')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Dosa</h2>
+                <p> hot and crisp dish  with a stuffing of potatoes in it</p>
+                <button onclick="orderIngredients('Dosa')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Paneer Chilli</h2>
+                <p>Indo-Chinese dish where cubes of fried crispy paneer are tossed in a spicy sauce made with soy sauce, vinegar, chili sauce!</p>
+                <button onclick="orderIngredients('Paneer Chilli')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Manchurian</h2>
+                <p>Indo-Chinese dish made by roughly chopping and deep-frying ingredients such as chicken, cauliflower (gobi), prawns, fish, mutton, and paneer, and then sautéeing them in a sauce flavored with soy sauce.</p>
+                <button onclick="orderIngredients('Manchurian')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Sushi</h2>
+                <p>a staple rice dish of Japanese cuisine, consisting of cooked rice flavored with vinegar and a variety of vegetable, egg, etc</p>
+                <button onclick="orderIngredients('Sushi')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Fish Pakoda</h2>
+                <p> Indian cuisine where boneless fish is marinated and batter fried to crispy perfection.</p>
+                <button onclick="orderIngredients('Fish Pakoda')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Mutton Curry</h2>
+                <p>a pot dish where mutton is marinated and cooked with plenty of spices, herbs, onions, tomatoes and yogurt.</p>
+                <button onclick="orderIngredients('Mutton Curry')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Tiramisu</h2>
+                <p> an Italian dessert made of ladyfinger pastries (savoiardi) dipped in coffee, layered with a whipped mixture of egg yolks, sugar, and mascarpone</p>
+                <button onclick="orderIngredients('Tiramisu')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>New York Cheesecake</h2>
+                <p>a creamy, beautiful, crack-free New York-style cheesecake </p>
+                <button onclick="orderIngredients('New York Cheesecake')">Order Ingredients</button>
+            </article>
+            <article class="recipe">
+                <h2>Cupcakes</h2>
+                <p>A small cake baked in a cup-shaped container and typically iced.</p>
+                <button onclick="orderIngredients('Cupcakes')">Order Ingredients</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Recipes</p>
+    </footer>
+
+    <script>     
+               document.getElementById("recipeSearch").addEventListener("input", function() {
+            const query = this.value.toLowerCase();
+            const recipes = document.querySelectorAll(".recipe");
+            
+            recipes.forEach(recipe => {
+                const title = recipe.querySelector("h2").textContent.toLowerCase();
+                recipe.style.display = title.includes(query) ? "block" : "none";
+            });
+        });
+
+        function orderIngredients(recipe) {
+            if (recipe) {
+                window.location.href = "/orders.html";
+            } else {
+                console.error("Recipe name is missing.");
+            }
+        }
+
+    </script>
+</body>
+</html>

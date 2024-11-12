@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(pexels-minan1398-1482803.jpg);
+            background-position-x:fixed;
+            background-position-y:fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        header {
+    
+            color: rgb(245, 240, 240);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display:flex;
+            gap: 15px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            color: white;
+            text-align: center;
+            padding: 100px 20px;    
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;    
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #ff8c00;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: #e68a00;
+            
+        }       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Delicious Bites</div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section class="hero" id="home">
+        <h1>Welcome to Delicious Bites!</h1>
+        <p>Your go-to place for mouthwatering food and its recipes.</p>
+        <a href="recipes.html" class="btn">Explore Recipes</a>;
+        <a href="Menu.html" class="btn">Explore Menu</a>
+    </section>   
+</body>
+</html>

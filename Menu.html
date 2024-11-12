@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            background-image: url(pexels-valeriya-1199960.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        #h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: aliceblue;
+        }
+
+        #h2 {
+            color: rgb(245, 240, 240);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: rgb(244, 237, 237);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .menu-section {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(248, 245, 245, 0.5);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .rating {
+            margin-left: auto;
+            font-weight: bold;
+        }
+
+        .mrp {
+            font-weight: bold;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header id="h2">
+        <div class="logo">Delicious Bites</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="orders.html">orders</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <header id="h1">
+            <h1>Welcome to Delicious Bites</h1>
+            <input type="text" id="searchBar" placeholder="Search for dishes..." class="search-bar">
+        </header>
+
+        <section class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item" data-name="Bruschetta">
+                <img src="pexels-amirho3intavkooli-15846843.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <span class="rating">⭐⭐⭐⭐ (4.0)</span>
+                <span class="mrp">₹50</span>
+            </div>
+            <div class="menu-item" data-name="Spring Rolls">
+                <img src="pexels-natalie-bond-320378-3569706.jpg" alt="Spring Rolls">
+                <h3>Spring Rolls</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (5.0)</span>
+                <span class="mrp">₹60</span>
+            </div>
+            <div class="menu-item" data-name="Momos">
+                <img src="pexels-natalie-bond-320378-3911228.jpg" alt="Momos">
+                <h3>Momos</h3>
+                <span class="rating">⭐⭐⭐⭐ (4.0)</span>
+                <span class="mrp">₹60</span>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Main Course(Veg)</h2>
+            <div class="menu-item">
+                <img src="pexels-jack-baghel-2199968-20422129.jpg" alt="Spaghetti Carbonara">
+                <h3>Dosa</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.5)</span>
+                <span class="mrp">₹120</span>
+            </div>
+            
+            <div class="menu-item">
+                <img src="pexels-kunal-lakhotia-781256899-28674541.jpg" alt="Grilled Salmon">
+                <h3>Paneer Chilli</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.8)</span>
+                <span class="mrp">₹250</span>
+            </div>
+            <div class="menu-item">
+                <img src="pexels-kunal-lakhotia-781256899-28674530.jpg" alt="Grilled Salmon">
+                <h3>Manchurian</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.8)</span>
+                <span class="mrp">₹150</span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Courses(Non-Veg)</h2>
+            
+            <div class="menu-item">
+                <img src="pexels-pixabay-357756.jpg" alt="Spaghetti Carbonara">
+                <h3>Sushi</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.5)</span>
+                <span class="mrp">₹340</span>
+            </div>
+            <div class="menu-item">
+                <img src="pexels-keynotez-2213257.jpg" alt="Spaghetti Carbonara">
+                <h3>Fish Pakoda</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.5)</span>
+                <span class="mrp">₹440</span>
+
+            </div>
+            <div class="menu-item">
+                <img src="pexels-prabal-9609849.jpg" alt="Spaghetti Carbonara">
+                <h3>Mutton Curry</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.5)</span>
+                <span class="mrp">₹350</span>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="pexels-quintingellar-1190165.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                <span class="mrp">₹80</span>
+            </div>
+            <div class="menu-item">
+                <img src="pexels-suzyhazelwood-1098592.jpg" alt="Cheesecake">
+                <h3>New York Cheesecake</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.6)</span>
+                <span class="mrp">₹70</span>
+            </div>
+            <div class="menu-item">
+                <img src="pexels-julias-torten-und-tortchen-434418-1120464.jpg" alt="Cheesecake">
+                <h3>Cupcakes</h3>
+                <span class="rating">⭐⭐⭐⭐☆ (4.6)</span>
+                <span class="mrp">₹70</span>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <img src="pexels-joshsorenson-990439.jpg" alt="Tiramisu">
+                <h3>Smoothie</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                <span class="mrp">₹130</span>
+            </div>
+            <div class="menu-item">
+                <img src="pexels-timur-weber-8679072.jpg" alt="Tiramisu">
+                <h3>Orange Juice</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                <span class="mrp">₹90</span>
+            </div><div class="menu-item">
+                <img src="pexels-suju-1233319.jpg" alt="Tiramisu">
+                <h3>Lemonade</h3>
+                <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                <span class="mrp">₹50</span>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const searchBar = document.querySelector('.search-bar');
+    const menuSections = document.querySelectorAll('.menu-section');
+
+    searchBar.addEventListener('input', function() {
+        const searchTerm = searchBar.value.toLowerCase();
+
+    
+        menuSections.forEach(section => {
+            section.style.display = 'none';
+
+            const menuItems = section.querySelectorAll('.menu-item');
+            let sectionHasVisibleItems = false;
+
+            
+            menuItems.forEach(item => {
+                const itemName = item.querySelector('h3').textContent.toLowerCase();
+                if (itemName.includes(searchTerm) && searchTerm !== '') {
+                    item.style.display = 'flex';
+                    sectionHasVisibleItems = true; 
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (sectionHasVisibleItems) {
+                section.style.display = 'block';
+            }
+        });
+    });
+});
+
+        
+    </script>
+</body>
+</html>

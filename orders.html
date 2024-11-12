@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Order Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(228, 218, 218);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(pexels-pixabay-277253.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header {
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: rgba(231, 241, 239, 0.425);
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 24px;
+            color: rgb(20, 20, 20);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: rgb(35, 33, 33);
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(245, 240, 240);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: rgb(244, 237, 237);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu-item, .ingredient-item {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        select, input[type="number"] {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            width: 100%;
+        }
+        .address-section input[type="text"], .address-section input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: rgb(91, 164, 91);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: darkgreen;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Delicious Bites</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Delicious Bites!</h1>
+
+        <div class="section-title">Order Food</div>
+        <form action="submit_order.html" method="post">
+            <div class="menu-item">
+                <label for="foodSelect">Choose a Menu Item:</label>
+                <select id="foodSelect" name="foodSelect">
+                    <option value="Bruschetta">Bruschetta - ₹50</option>
+                    <option value="Spring Rolls">Spring Rolls - ₹60</option>
+                    <option value="Momos">Momos - ₹60</option>
+                    <option value="Dosa">Dosa - ₹120</option>
+                    <option value="Paneer Chilli">Paneer Chilli - ₹250</option>
+                    <option value="Manchurian">Manchurian - ₹150</option>
+                    <option value="Sushi">Sushi - ₹340</option>
+                    <option value="Fish Pakoda">Fish Pakoda - ₹440</option>
+                    <option value="Mutton Curry">Mutton Curry - ₹350</option>
+                    <option value="Tiramisu">Tiramisu - ₹80</option>
+                    <option value="New york cheesecake">New york cheesecake - ₹70</option>
+                    <option value="Cupcakes">Cupcakes - ₹70</option>
+                    <option value="Smoothie">Smoothie - ₹130</option>
+                    <option value="Orange juice">Orange Juice - ₹90</option>
+                    <option value="Lemonade">Lemonade - ₹50</option>
+
+                
+                </select>
+                <input type="number" name="foodQuantity" placeholder="Quantity" min="0">
+            </div>
+
+            <div class="section-title">Order Ingredients</div>
+            <div class="ingredient-item">
+                <label for="ingredientSelect">Choose an Ingredient:</label>
+                <select id="ingredientSelect" name="ingredientSelect">
+                    <option value="Tomato">Tomato - ₹20 per kg</option>
+                    <option value="Onion">Onion - ₹30 per kg</option>
+                    <option value="Chicken">Chicken - ₹200 per kg</option>
+                    <option value="Corn flour">Corn flour - ₹120 per kg</option>
+                    <option value="Fish">Fish - ₹120 per kg</option>
+                    <option value="Cocoa">Cocoa powder - ₹300 per kg</option>
+                    <option value="Paneer">Paneer - ₹350 per kg</option>
+
+            
+                </select>
+                <input type="number" name="ingredientQuantity" placeholder="Quantity in kg" min="0">
+            </div>
+
+            
+            <div class="section-title">Delivery Address</div>
+            <div class="address-section">
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="text" name="streetAddress" placeholder="Street Address" required>
+                <input type="number" name="zipCode" placeholder="Zip Code" required>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
